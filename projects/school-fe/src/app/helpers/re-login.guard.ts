@@ -1,0 +1,21 @@
+import { Injectable } from '@angular/core';
+import { Router, CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+
+import { AuthenticationService } from '../services/core/authentication.service';
+import { hasToken } from './token.helper';
+
+@Injectable({ providedIn: 'root' })
+export class ReLoginGuard implements CanActivate {
+    constructor(
+        private router: Router,
+        private authenticationService: AuthenticationService
+    ) { }
+
+    canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
+        if (hasToken()) {
+            this.router.navigate(['/']);
+            return false;
+        }
+        return true;
+    }
+}
