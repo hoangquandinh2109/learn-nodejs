@@ -42,7 +42,7 @@ const startServer = async () => {
 
     server.applyMiddleware({ app });
 
-    await mongoose.connect('mongodb://localhost:27017/kittybrows-db', {
+    await mongoose.connect('mongodb+srv://jnxwd:JnxWd242154@cluster0.ikl66.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
         useNewUrlParser: true,
         useUnifiedTopology: true
     }).then(() => console.log('Database Connected'))
