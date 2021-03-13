@@ -2,8 +2,7 @@
   "name": "school-prj",
   "version": "1.0.0",
   "scripts": {
-    "startBE": "nodemon --exec babel-node projects/school-be/src/index.js",
-    "startFE": "ng serve"
+    "start": "nodemon --exec babel-node projects/school-be/src/index.js",
   },
   "dependencies": {
     "@babel/cli": "^7.11.6",
