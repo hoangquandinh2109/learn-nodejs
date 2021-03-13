@@ -1,0 +1,66 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2019",
+      "dom",
+      "esnext.asynciterable"
+    ],
+    "skipLibCheck": true,
+    "paths": {
+      "@webapp-management-views/*": [
+        "./projects/school-fe/src/app/management-views/*"
+      ],
+      "@webapp-views/*": [
+        "./projects/school-fe/src/app/views/*"
+      ],
+      "@webapp-popups/*": [
+        "./projects/school-fe/src/app/popups/*"
+      ],
+      "@webapp-components/*": [
+        "./projects/school-fe/src/app/components/*"
+      ],
+      "@webapp-pipe/*": [
+        "./projects/school-fe/src/app/pipe/*"
+      ],
+      "@webapp-share/*": [
+        "./projects/school-fe/src/app/share/*"
+      ],
+      "@webapp-helpers/*": [
+        "./projects/school-fe/src/app/helpers/*"
+      ],
+      "@webapp-layouts/*": [
+        "./projects/school-fe/src/app/layouts/*"
+      ],
+      "@webapp-auth/*": [
+        "./projects/school-fe/src/app/auth/*"
+      ],
+      "@webapp-svc/*": [
+        "./projects/school-fe/src/app/services/*"
+      ],
+      "@webapp-interfaces/*": [
+        "./projects/school-fe/src/app/interfaces/*"
+      ],
+      "@environment": [
+        "./projects/school-fe/src/environments/environment"
+      ],
+    }
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  }
+}
